@@ -30,7 +30,7 @@
 			Office.context.mailbox.getCallbackTokenAsync({ isRest: true }, function (result) {
 				if (result.status === "succeeded") {
 					var accessToken = encodeURIComponent(result.value);
-					window.open("http://britten1.internal.isw.net.au/customers/Centennial%20Coal/cc222.nsf/Test.xsp?accessToken=" + accessToken + props);
+					window.open("http://britten1.internal.isw.net.au/customers/Centennial%20Coal/cc222.nsf/SaveEmail.xsp?accessToken=" + accessToken + props);
 					return true;
 				} else {
 					Office.context.ui.showNotification("An error occurred, please try again. If the problem persists, contact your administrator.");
